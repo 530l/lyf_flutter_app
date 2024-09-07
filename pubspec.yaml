@@ -4,17 +4,7 @@ description: "A new Flutter project."
 # 通过使用 `flutter pub publish`。对于私有包，推荐使用这个设置。
 publish_to: 'none' # 如果你希望发布到 pub.dev，请删除这一行
 
-# 以下定义了应用程序的版本和构建号。
-# 版本号是三个用点号分隔的数字，例如 1.2.43
-# 后跟一个可选的构建号，用 + 分隔。
-# 可以通过指定 --build-name 和 --build-number 在 flutter 构建中覆盖版本和构建号。
-# 在 Android 中，build-name 用作 versionName，而 build-number 用作 versionCode。
-# 阅读更多关于 Android 版本控制的信息：https://developer.android.com/studio/publish/versioning
-# 在 iOS 中，build-name 用作 CFBundleShortVersionString，而 build-number 用作 CFBundleVersion。
-# 阅读更多关于 iOS 版本控制的信息：
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# 在 Windows 中，build-name 用作产品和文件版本的主要、次要和修补部分，
-# 而 build-number 用作构建后缀。
+
 version: 1.0.0+1
 
 environment:
@@ -24,6 +14,9 @@ environment:
 # 要自动升级包依赖到最新版本，可以运行 `flutter pub upgrade --major-versions`。
 # 或者，可以通过手动更改以下版本号来更新依赖项到 pub.dev 上可用的最新版本。
 # 要查看哪些依赖项有新版本可用，运行 `flutter pub outdated`。
+#flutter pub add google_mobile_ads
+#flutter pub run build_runner build
+#flutter pub run build_runner build --delete-conflicting-outputs
 dependencies:
   flutter:
     sdk: flutter
@@ -41,7 +34,8 @@ dependencies:
   dio: ^5.6.0
   fluttertoast: ^8.2.5
   shared_preferences: ^2.2.3
-
+  flutter_inappwebview: ^6.0.0
+  google_mobile_ads: ^5.1.0
 
 dev_dependencies:
   flutter_test:

@@ -18,7 +18,8 @@ class WxPage extends ConsumerWidget {
       body: articleAsyncValue.when(
         data: (articles) {
           return RefreshIndicator(
-            onRefresh: () async {
+            /// required this.onRefresh,---> typedef RefreshCallback = Future<void> Function();
+            onRefresh: () async{
               ref.read(articleRepositoryProvider.notifier).refresh(); // 刷新数据
             },
             child: ListView.builder(

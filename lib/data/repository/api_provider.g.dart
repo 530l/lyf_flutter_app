@@ -6,7 +6,7 @@ part of 'api_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$apiServiceHash() => r'61d1d35afe93d76e09654cdaafad5b5b67ddfc0b';
+String _$apiServiceHash() => r'8e8ce031cc95b97228cc541ce62a16d6c3ee12dc';
 
 /// See also [apiService].
 @ProviderFor(apiService)
@@ -34,7 +34,7 @@ final articleProvider = AutoDisposeFutureProvider<ArticleEntity>.internal(
 );
 
 typedef ArticleRef = AutoDisposeFutureProviderRef<ArticleEntity>;
-String _$articleRepositoryHash() => r'543aefa1f3da913bd9480b2bc004863714e135d6';
+String _$articleRepositoryHash() => r'f6d1c18dfbe82ad9aca3d4241fec84d6f8ad4713';
 
 /// See also [ArticleRepository].
 @ProviderFor(ArticleRepository)
