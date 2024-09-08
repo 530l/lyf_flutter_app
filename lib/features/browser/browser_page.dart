@@ -33,16 +33,16 @@ class BrowserPage extends ConsumerWidget {
         InAppWebView(
           initialUrlRequest: URLRequest(url: WebUri(url)),
           onLoadStart: (InAppWebViewController controller, Uri? url) {
-            ref.read(browserNotifierProvider.notifier).setLoading(true); // 开始加载
+            // 开始加载
+            ref.read(browserNotifierProvider.notifier).setLoading(true);
           },
           onLoadStop: (InAppWebViewController controller, Uri? url) {
-            ref
-                .read(browserNotifierProvider.notifier)
-                .setLoading(false); // 停止加载
+            // 停止加载
+            ref.read(browserNotifierProvider.notifier).setLoading(false);
           },
         ),
-        if (isLoading)
-          const Center(child: CircularProgressIndicator()), // 显示加载进度条
+        // 显示加载进度条
+        if (isLoading) const Center(child: CircularProgressIndicator()),
       ],
     );
   }
